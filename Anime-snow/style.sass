@@ -1,0 +1,23 @@
+/* Anime-snow */
+/* 2018 Yukihiro Kawada */
+/* based http://niwakasoft.jp/column/css3_animation/ */
+
+$fg: #000000
+$bg: #6b92b9 
+
+$scroll-bg: #000
+$scroll-fg: rgba($fg, .3)
+$scroll-width: 1em
+
+@import variables
+@import styles
+
+html, body
+  background-image: url("image/snow.png"),url("image/snow2.png"),url("image/snow3.png")
+  animation: snow 20s linear infinite
+
+@keyframes snow
+  0%
+    background-position: 0 0, 0 0, 0 0
+  100%
+    background-position: 500px 500px, 300px 300px, 400px 400px

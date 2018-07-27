@@ -1,0 +1,28 @@
+/* Anime-moon */
+/* 2018 Yukihiro Kawada */
+/* based https://codepen.io/agoodwin/pen/NMJoER */
+
+$fg: #cccccc
+$bg: #000000
+
+$scroll-bg: #000
+$scroll-fg: rgba($fg, .3)
+$scroll-width: 1em
+
+@import variables
+@import styles
+
+html, body
+  background-image: url("image/clouds_repeat.png"),url("image/moon2.png"),url("image/twinkling.png"),url("image/stars.png")
+  background-position: 0px 0px, 90% 10%, 30px 80px, 0px 0px;
+  background-opacity: 0.1, 1, 1, 1;
+  background-repeat: repeat-x, no-repeat, repeat, repeat;
+  animation: animatedBird 70s linear infinite;
+  background-size: 100% 100%, 30% 60%, 50% 100%, 100% 100%;
+  background-attachment: fixed
+
+@keyframes animatedBird
+	from
+	  background-position: 0px 0px, 90% 10%, 0px 0px, 0 0;
+	to
+	  background-position: 1000px 0, 90% 10%, 1000px 500px, 0 0;

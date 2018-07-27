@@ -1,0 +1,28 @@
+/* Anime-star_twinkling */
+/* 2018 Yukihiro Kawada */
+/* based https://codepen.io/WebSonick/pen/vjmgu */
+
+$fg: #cccccc
+$bg: #000000
+
+$scroll-bg: #000
+$scroll-fg: rgba($fg, .3)
+$scroll-width: 1em
+
+@import variables
+@import styles
+
+html, body
+  background-image: url("image/clouds3.png"),url("image/twinkling.png"),url("image/stars.png")
+  background-position: 0px 0px, 30px 80px, 0px 0px;
+  background-opacity: 0.8, 0.9, 1;
+  background-repeat: repeat-x, repeat, no-repeat;
+  animation: animatedBird 200s linear infinite;
+  background-size: 100% 100% 100%;
+  background-attachment: fixed
+
+@keyframes animatedBird
+	from
+	  background-position: 0px 0px, 0px 0px, 0 0;
+	to
+	  background-position: 10000px 0, -5000px 2500px, 0 0;

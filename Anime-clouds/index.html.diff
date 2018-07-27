@@ -1,0 +1,16 @@
+diff --git butterfly/templates/index.html butterfly/templates/index.html
+index eca7e00..feb5153 100644
+--- butterfly/templates/index.html
++++ butterfly/templates/index.html
+@@ -32,5 +32,11 @@
+     <script src="{{ reverse_url('LocalJsStatic') }}"></script>
+     <div id="packed"></div>
+     <div id="term"></div>
++    <div class="pterm">
++        <div class="pterm1"></div>
++        <div class="pterm2"></div>
++        <div class="pterm3"></div>
++        <div class="pterm4"></div>
++    </div>
+   </body>
+ </html>
